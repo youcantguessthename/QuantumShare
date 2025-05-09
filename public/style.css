@@ -1,0 +1,145 @@
+
+:root {
+  --primary-color: #00BFCF;
+  --background-color: #f4f4f9;
+  --header-bg: #1f2937;
+  --font-color: #111827;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: var(--background-color);
+  color: var(--font-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  background: var(--header-bg);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: 48px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.user-panel, .file-transfer {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 320px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.user-panel h2, .file-transfer h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+input[type="text"], input[type="file"], select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0098a9;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.hidden {
+  display: none;
+}
+
+#notification {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #fffbe6;
+  border: 1px solid #ffd700;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+#preview-area iframe,
+#preview-area img {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background-color: #111;
+  color: #f1f1f1;
+}
+
+body.dark-mode header {
+  background: #000;
+}
+
+body.dark-mode .user-panel,
+body.dark-mode .file-transfer {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+body.dark-mode #notification {
+  background: #222;
+  border-color: #555;
+}

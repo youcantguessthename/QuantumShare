@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuantumShare</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="/socket.io/socket.io.js" defer></script>
+  <script src="client.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="QuantumShare Logo" class="logo" style="height: 80px;" />
+    <h1>QuantumShare</h1>
+    <div class="controls">
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="pl">Polski</option>
+      </select>
+      <button id="theme-toggle">🌙</button>
+    </div>
+  </header>
+
+  <main class="app-container">
+    <section class="user-panel">
+      <h2 data-en="Users Online" data-pl="Użytkownicy online">Users Online</h2>
+      <ul id="user-list"></ul>
+    </section>
+
+    <section class="file-transfer">
+      <div class="login-section">
+        <input type="text" id="username" placeholder="Enter pseudonym..." />
+        <button id="login-btn" type="button" data-en="Login" data-pl="Zaloguj">Login</button>
+      </div>
+
+      <div class="upload-section hidden">
+        <input type="file" id="file-input" />
+        <select id="recipient-select">
+          <option value="">Select recipient</option>
+        </select>
+        <button id="send-btn" type="button" data-en="Send File" data-pl="Wyślij plik">Send File</button>
+        <p id="progress-text"></p>
+      </div>
+
+      <div id="notification" class="hidden"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p data-en="Note: Only one pseudonym per IP is allowed to prevent conflicts." data-pl="Uwaga: tylko jeden pseudonim na IP jest dozwolony, aby uniknąć konfliktów.">Note: Only one pseudonym per IP is allowed to prevent conflicts.</p>
+  </footer>
+</body>
+</html>

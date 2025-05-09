@@ -1,0 +1,12 @@
+Install dependencies: npm install
+Start the server: npm start
+Open http://localhost:3000 in your browser
+Enter a nickname
+Select a user from the list, choose a file, and click "Send"
+The recipient will receive a notification with 3 options:
+
+"Yes" – accept and download the file
+
+"No" – reject the file
+
+"View content" – preview the content before downloading
