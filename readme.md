@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/logo.png" alt="QuantumShare logo" width="180">
+</p>
+
 # P2P File Transfer Application
 
 This application enables file transfers between users in a peer-to-peer (P2P) model, where users identify themselves using pseudonyms instead of IP addresses.
