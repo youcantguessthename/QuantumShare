@@ -1,0 +1,50 @@
+🌐 How to Temporarily Host QuantumShare with Ngrok (Until Public Hosting)
+If you'd like to use QuantumShare with your friends before it’s officially hosted online, you can run it on your machine and share it using Ngrok. Here's how.
+
+✅ Step-by-Step: Local Hosting with Ngrok
+1. Install Node.js
+Make sure you have Node.js installed:
+https://nodejs.org/
+
+2. Install Ngrok
+Download Ngrok from:
+https://ngrok.com/download
+
+Unzip and place it somewhere in your system PATH.
+
+3. Install dependencies
+In your terminal, inside the project folder:
+
+npm install
+4. Start the server
+npm start
+The app will run at:
+http://localhost:3000
+
+5. Start an Ngrok tunnel
+In a separate terminal:
+
+
+ngrok http 3000
+Ngrok will provide you with a public URL, like:
+
+
+https://abc12345.ngrok.io
+6. Share that link
+Send that link to your friends — they can open the app in their browser and use it with you in real time.
+
+⚠️ Things to Note
+Ngrok free plan allows sessions of ~2 hours and rotates the public URL each time.
+
+If you'd like a custom subdomain or longer sessions, consider a paid Ngrok plan.
+
+You must keep the terminal open with the Ngrok session running while using the app.
+
+📦 Future: Public Hosting
+At some point, QuantumShare may be deployed to a public web server (e.g. Vercel, Railway, or a VPS). When that happens, no Ngrok will be needed — users will simply visit a URL like:
+
+arduino
+Kopiuj
+Edytuj
+https://quantumshare.example.com
+Until then, this Ngrok setup is a simple and secure way to use the app across different devices and locations.
