@@ -45,6 +45,8 @@ This application enables file transfers between users in a peer-to-peer (P2P) mo
    ```
    http://localhost:3000
    ```
+[![Buy Me a Coffee](https://cdn.buymeacoffee.com/buttons/default-orange.png)](https://buycoffee.to/youcantguessthename)
+
 
 ## How to Use
 
